@@ -11,7 +11,7 @@ export const COUNTRIES: Country[] =
     gdp : 1283162    
 },
 {
-name : 'United States of America',
+name : 'U.S.A',
 capital : 'Washington, D.C.',
 area : 9525067,
 population : 325365189 ,

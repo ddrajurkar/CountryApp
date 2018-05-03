@@ -1,3 +1,32 @@
-<p>
-  home works!
-</p>
+<div class="container">
+<h2>Three Most Populated Countries</h2>
+  <div class="group">
+   <a *ngFor="let country of populatedcountries" class="country-unit" routerLink="/detail/{{country.name}}">
+   <div class="country-block">
+     <h4>{{country.name}}</h4>
+     <p>{{country.population | number}}</p>
+     <p>People</p>
+   </div>
+  </a>
+  </div>
+  <br/>
+  <h2>Three Largest Countries</h2>
+  <div class="group">
+    <a *ngFor="let country of largestcountries" class="country-unit" routerLink="/detail/{{country.name}}">
+      <div class="country-block">
+      <h4>{{country.name}}</h4>
+      <p>{{country.area | number}}</p><p>km<sup>2</sup></p>
+    </div>
+    </a>
+  </div>
+  <br/>
+  <h2>Three Most GDP rated Countries</h2>
+  <div class="group">
+    <a *ngFor="let country of gdpcountries" class="country-unit" routerLink="/detail/{{country.name}}">
+   <div class="country-block">  
+<h4>{{country.name}}</h4>
+<p>{{country.gdp | number}} <strong>USD</strong></p>
+   </div>
+    </a>
+  </div>
+</div>

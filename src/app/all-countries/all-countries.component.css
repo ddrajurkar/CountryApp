@@ -1,4 +1,14 @@
-body {
+a {
+    text-decoration: none;
+  }
+   
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+   
+  body {
     font-family: 'Lato';
   }
    
@@ -40,12 +50,12 @@ body {
       text-align: center;
       color: white;
       height: 150px;
-      background-color: #795548;
+      background-color: #4CAF50;
       border-radius: 2px;
   }
    
   .country-block:hover {
-    background-color: #9C27B0;
+    background-color: #FF5722;
     cursor: pointer;
     color:white;
   }
